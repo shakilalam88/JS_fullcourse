@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // array destructuring 
+        // const myArray = ["value1", "value2", "value3","value4"];
+        // const myArray2 = ["value1", "value2", "value3","value4"];
+        // let myvar1 = myArray[0];
+            // let myvar2 = myArray[1];
+            // console.log("value of myvar1", myvar1);
+            // console.log("value of myvar2", myvar2);
+            // let [myvar1, myvar2, ...myNewArray] = myArray;
+            // console.log("value of myvar1", myvar1);
+            // console.log("value of myvar2", myvar2);
+            // console.log(myNewArray);
+            // const myNewArray= [...myArray,...myArray2]
+            // console.log("🚀 ~ file: 35 Array destructuring.html ~ line 23 ~ myNewArray", myNewArray);
+    
+    
+            const myArray = ["value1", "value2", "value3","value4"];
+            const myArray2 = ["value1", "value2", "value3","value4"];
+
+            [v1,v2,,v3] =myArray;
+            console.log("🚀 ~ file: 35 Array destructuring.html:30 ~ v3", v3);
+            console.log("🚀 ~ file: 35 Array destructuring.html:30 ~ v2", v2);
+            console.log("🚀 ~ file: 35 Array destructuring.html:30 ~ v1", v1);
+
+            const myNewArray1 =[myArray];
+            const myNewArray =[...myArray];
+            const myNewArray2 =[...myArray,...myArray2];
+            [val1, ...rest]= myArray;
+            console.log("🚀 ~ file: 35 Array destructuring.html:38 ~ rest", rest);
+            console.log("🚀 ~ file: 35 Array destructuring.html:37 ~ myNewArray2", myNewArray2);
+            console.log("🚀 ~ file: 35 Array destructuring.html:36 ~ myNewArray1", myNewArray1);
+            console.log("🚀 ~ file: 35 Array destructuring.html:35 ~ myNewArray", myNewArray);
+            
+    </script>
+</body>
+</html>

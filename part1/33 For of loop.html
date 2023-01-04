@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // for of loop in array
+        // debugger
+        const fruits = ["apple", "mango", "grapes", "fruit4", "fruit5"];
+        let fruits2 = [];
+
+        // for (let fruit of fruits) {
+        //     fruits2.push(fruit.toUpperCase());
+        // }
+        // console.log(fruits2);
+
+        // for (let i = 0; i < fruits.length; i++) {
+        //     console.log(fruits[i]);
+        // }
+
+        // for (i = 0; i < fruits.length; i++) {
+        //     fruits2.push(fruits[i])
+        // }
+        for(fruit of fruits){
+            fruits2.push(fruit)          
+        }
+        console.log("🚀 ~ file: 33 For of loop.html ~ line 16 ~ fruits2", fruits2);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // how to iterate object 
+        const person = {
+            name: "harshit",
+            age: 22,
+            "person hobbies": ["guitar", "sleeping", "listening music"]
+        }
+
+        // for in loop 
+        // Object.keys 
+
+        // for(let key in person){
+        //     // console.log(`${key} : ${person[key]}`);
+        //     console.log(key," : " ,person[key]);
+        // }
+
+        // console.log(typeof (Object.keys(person)));
+        // const val = Array.isArray((Object.keys(person)));
+        // console.log(val);
+
+        // for(let key of Object.keys(person)){
+        //     console.log(person[key]);
+        // }
+
+        for(let per in person){
+            console.log(`${per}: ${person[per]}`);
+        }
+    </script>
+</body>
+</html>

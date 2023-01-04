@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function singHappyBirthday() {
+            console.log("happy birthday to you ......");
+            return 5;
+        }
+        // console.log(singHappyBirthday());
+
+        function sumThreeNumbers(number1, number2, number3) {
+            return number1 + number2 + number3;
+        }
+        // console.log(sumThreeNumbers(4,5,6));
+
+
+        // isEven
+        // input : 1 number 
+        // output : true , false 
+
+        // function isEven(number){
+        //     if(number%2===0){
+        //         return true
+        //     }
+        //     return false
+        // }
+        function isEven(number){
+            return number % 2===0
+        }
+        // console.log(isEven(4));
+
+        // function 
+        // input : string 
+        // output: firstCharacter 
+
+        function firstChar(string){
+            return string[0]
+        }
+        // console.log(firstChar('shakil'));
+
+        // function firstChar(anyString){
+        //     return anyString[0];
+        // }
+
+        // console.log(firstChar("zbc"));
+
+        // function 
+        // input : array, target (number)
+        // output: index of target if target present in array 
+
+        let  arr = [3,4,5]
+        for(let index in arr){
+            console.log(arr[index]);
+        }
+        function findTarget(array, target){
+            for( let index in array){
+                array[index] === target
+                return index
+            }
+            return -1
+        }
+        console.log(findTarget([3,4,5], ));
+        // function findTarget(array, target) {
+        //     for (let i = 0; i < array.length; i++) {
+        //         if (array[i] === target) {
+        //             return i;
+        //         }
+        //     }
+        //     return -1;
+        // }
+        // const myArray = [1, 3, 8, 90]
+        // const ans = findTarget(myArray, 4);
+        // console.log(ans);
+    </script>
+</body>
+
+</html>

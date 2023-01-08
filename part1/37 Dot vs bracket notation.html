@@ -9,18 +9,35 @@
 <body>
     <script>
         // difference between dot and bracket notaion
-        const key = "email";
+        const id = "email";
         const person = {
             name: "harshit",
             age: 22,
             "person hobbies": ["guitar", "sleeping", "listening music"]
 
         }
+        // person[id] = "shakil"
+        person.id ='shakil'
+        // console.log(person);
+        // console.log(person['name']);
 
         // console.log(person["person hobbies"]);
         // person.key = "harshitvashisth@gmail.com";
-        person[key] = "harshitvashisth@gmail.com";
-        console.log(person);
+        // person[key] = "harshitvashisth@gmail.com";
+        // console.log(person);
+         
+        //id="two"
+        // person.id = one  (id:one)
+        // person['id'] = one (id:one)
+        // person[id] = one  (one:"two")
+
+        // ************
+        // person.name === person['name']
+        // ************
+
+        console.log(person.name);
+        console.log(person['name']);
+        // console.log(person['person hobbies']);
     </script>
 </body>
 </html>

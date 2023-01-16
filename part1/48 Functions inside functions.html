@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // functions inside function 
+        // function app() {
+        //     const myFunc = () => {
+        //         console.log("hello from myFunc")
+        //     }
+
+        //     const addTwo = (num1, num2) => {
+        //         return num1 + num2;
+        //     }
+
+        //     const mul = (num1, num2) => num1 * num2;
+
+        //     console.log("inside app");
+        //     myFunc();
+        //     console.log(addTwo(2, 3));
+        //     console.log(mul(2, 3));
+        // }
+        // app();
+
+        const app=()=>{
+            const add=(num1,num2)=>{
+                console.log(sub(4,3)); 
+                return num1+num2;
+                console.log('shakil');
+            }
+            
+            const sub=(num1,num2)=>{
+                console.log(mul(3,4));
+                return num1 - num2
+            }
+
+            function mul(num1,num2){
+                return num1 * num2
+            }
+            console.log("hello");
+            console.log(add(3,4));
+            // console.log(sub(3,4));
+            // console.log(mul(3,4));
+        }
+        app()
+        //hello 12 1 7
+    </script>
+</body>
+
+</html>
